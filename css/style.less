@@ -89,30 +89,27 @@ header {
 
 header nav {
 	margin: 0 2px 0 365px;
-}
-
-header nav ul {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-}
-
-header nav a {
-	display: block;
-	color: #8c8c8c;
-	font-family: "montserrat_bold", "arial", sans-serif;
-	text-transform: uppercase;
-	font-weight: 300;
-	font-size: 14px;
-	letter-spacing: 1.4px;
-	padding: 10px 13px;
-	border-bottom: 3px solid transparent;
-}
-
-header nav a:hover {
-	color: #212121;
-	border-bottom: 3px solid black;
-	transition: all 1s;
+	ul {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+			a {
+			display: block;
+			color: #8c8c8c;
+			font-family: "montserrat_bold", "arial", sans-serif;
+			text-transform: uppercase;
+			font-weight: 300;
+			font-size: 14px;
+			letter-spacing: 1.4px;
+			padding: 10px 13px;
+			border-bottom: 3px solid transparent;
+			&:hover {
+				color: #212121;
+				border-bottom: 3px solid black;
+				transition: all 1s;
+			}
+		}
+	}
 }
 
 .active {
